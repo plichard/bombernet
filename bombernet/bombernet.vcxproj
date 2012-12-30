@@ -105,6 +105,7 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="client.h" />
     <ClInclude Include="GameEvent.h" />
     <ClInclude Include="input.h" />
     <ClInclude Include="server.h" />
@@ -113,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bombernet.cpp" />
+    <ClCompile Include="client.cpp" />
     <ClCompile Include="GameEvent.cpp" />
     <ClCompile Include="input.cpp" />
     <ClCompile Include="server.cpp" />
