@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bombernet", "bombernet.vcxproj", "{0B585CA4-6E33-4AD6-A2C9-368FC07E95FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		eagle2com-debug|Win32 = eagle2com-debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B585CA4-6E33-4AD6-A2C9-368FC07E95FB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B585CA4-6E33-4AD6-A2C9-368FC07E95FB}.Debug|Win32.Build.0 = Debug|Win32
+		{0B585CA4-6E33-4AD6-A2C9-368FC07E95FB}.eagle2com-debug|Win32.ActiveCfg = eagle2com-debug|Win32
+		{0B585CA4-6E33-4AD6-A2C9-368FC07E95FB}.eagle2com-debug|Win32.Build.0 = eagle2com-debug|Win32
+		{0B585CA4-6E33-4AD6-A2C9-368FC07E95FB}.Release|Win32.ActiveCfg = Release|Win32
+		{0B585CA4-6E33-4AD6-A2C9-368FC07E95FB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
