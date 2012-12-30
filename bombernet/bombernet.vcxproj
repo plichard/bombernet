@@ -107,22 +107,28 @@
   <ItemGroup>
     <ClInclude Include="client.h" />
     <ClInclude Include="GameEvent.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="input.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="server.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="world.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bombernet.cpp" />
     <ClCompile Include="client.cpp" />
     <ClCompile Include="GameEvent.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="input.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="server.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='eagle2com-debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="world.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
