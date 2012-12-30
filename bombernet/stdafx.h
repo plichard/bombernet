@@ -13,4 +13,6 @@
 #include <stdlib.h>
 #include <SDL/SDL.h>
 
+typedef unsigned int uint;
+
 // TODO: reference additional headers your program requires here
