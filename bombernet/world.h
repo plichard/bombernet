@@ -39,4 +39,5 @@ namespace World
 	int GetH();
 	GameTile& GetTile(int x, int y);
 	void Display();
+	void Update();
 }

@@ -1,0 +1,30 @@
+﻿Build started 31/12/2012 18:27:43.
+     1>Project "C:\Users\Peter\Documents\projects\bomber\bombernet\bombernet.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\bombernet.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Peter\Documents\projects\bomber\bombernet\Release\bombernet.exe" /INCREMENTAL:NO /NOLOGO SDLmain.lib SDL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\bombernet.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Peter\Documents\projects\bomber\bombernet\Release\bombernet.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Peter\Documents\projects\bomber\bombernet\Release\bombernet.lib" /MACHINE:X86 Release\bombernet.obj
+         Release\client.obj
+         Release\GameEvent.obj
+         Release\GameObject.obj
+         Release\input.obj
+         Release\Player.obj
+         Release\server.obj
+         Release\stdafx.obj
+         Release\world.obj
+         Generating code
+         Finished generating code
+         bombernet.vcxproj -> C:\Users\Peter\Documents\projects\bomber\bombernet\Release\bombernet.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Peter\Documents\projects\bomber\bombernet\Release\bombernet.exe;#1" /manifest Release\bombernet.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\bombernet.unsuccessfulbuild".
+         Touching "Release\bombernet.lastbuildstate".
+     1>Done Building Project "C:\Users\Peter\Documents\projects\bomber\bombernet\bombernet.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.37

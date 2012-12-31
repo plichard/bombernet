@@ -1,13 +1,18 @@
 #include "stdafx.h"
 #include "world.h"
+#include "Player.h"
 
 namespace World
 {
 	int w = 0;
 	int h = 0;
 	GameTile* tiles = NULL;
+	PlayerVec players;
 
-	SDL_Surface* i_wall = NULL, *i_grass = NULL, *screen = NULL;
+	SDL_Surface* i_wall = NULL,
+		*i_grass = NULL,
+		*screen = NULL,
+		*i_player = NULL;
 
 	void SetScreen(SDL_Surface* surf)
 	{
@@ -21,6 +26,12 @@ namespace World
 		tiles = new GameTile[w*h];
 		i_wall = SDL_LoadBMP("images/wall.bmp"); if(!i_wall){printf("[world] could not load wall.bmp");}
 		i_grass = SDL_LoadBMP("images/grass.bmp"); if(!i_grass){printf("[world] could not load grass.bmp");}
+		i_player = SDL_LoadBMP("images/player.bmp");if(!i_player){printf("[world] could not load player.bmp");}
+			SDL_SetColorKey(i_player,SDL_SRCCOLORKEY,SDL_MapRGB(i_player->format,255,0,255));
+
+
+			players.push_back(new Player(SDLK_UP,SDLK_DOWN,SDLK_LEFT,SDLK_RIGHT));
+			players.push_back(new Player(SDLK_w,SDLK_s,SDLK_a,SDLK_d));
 	}
 
 	int GetW()
@@ -40,7 +51,6 @@ namespace World
 
 	void Display()
 	{
-		printf("display\n");
 		SDL_Rect t_pos;
 		t_pos.w = TILE_SIZE;
 		t_pos.h = TILE_SIZE;
@@ -59,6 +69,20 @@ namespace World
 			}
 		}
 
+		//display players
+		for(int i = 0; i < players.size(); i++)
+		{
+			SDL_BlitSurface(i_player,NULL,screen,&players[i]->GetScreenPos());
+		}
+
 		SDL_Flip(screen);
+	}
+
+	void Update()
+	{
+		for(int i = 0; i < players.size(); i++)
+		{
+			players[i]->Update();
+		}
 	}
 }

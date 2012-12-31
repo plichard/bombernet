@@ -11,21 +11,23 @@
 int main(int argc, char *argv[])
 {
 	Input::Init();
-	World::Init(10,10);
+	World::Init(50,30);
 
     SDL_Init(SDL_INIT_VIDEO);
  
-	SDL_Surface* scr = SDL_SetVideoMode(800, 600, 32, SDL_HWSURFACE);
+	SDL_Surface* scr = SDL_SetVideoMode(TILE_SIZE*50, TILE_SIZE*30, 32, SDL_HWSURFACE);
 	World::SetScreen(scr);
     SDL_WM_SetCaption("Bomberman", NULL);
 
 
 	while(!Input::key[SDLK_ESCAPE] && !Input::quit)
 	{
+		Input::UpdateEvents();
+		World::Update();
 		World::Display();
 		SDL_Delay(30);
-		Input::UpdateEvents();
-		if(Input::key[SDLK_s]) //server start-stop
+		
+		/*if(Input::key[SDLK_s]) //server start-stop
 		{
 			Input::key[SDLK_s] = 0;
 			Server::Init();
@@ -37,7 +39,7 @@ int main(int argc, char *argv[])
 			Input::key[SDLK_c] = 0;
 			Client::Init();
 			Client::Connect();
-		}
+		}*/
 	}
 
     SDL_Quit();

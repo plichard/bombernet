@@ -20,7 +20,9 @@ typedef int socklen_t;
 
 typedef unsigned int uint;
 
-#define TILE_SIZE 64
+#define TILE_SIZE 24
+
+#include <vector>
 
 
 // TODO: reference additional headers your program requires here
